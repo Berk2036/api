@@ -32,4 +32,19 @@ Flei�aufgaben
 - HTTP Basic Auth oder Token
 
 
-
+======================
+programi IDE de actiktan sonra terminal de 
+    docker build -t my-app .
+kodunu giriniz. bu kod ile image olusacak. docker desktop kurulu ise images kisminda gözükür. cli kullaniyorsaniz
+    docker images
+kodu ile image ler listelenecektir.
+Daha sonra bu image ten bir container üretilmesi lazim.
+    docker run --name my-php-container -p 8080:80 -d my-app
+Bu kod ile container olusur.
+container lari listelemek icin ister docker desktop ile ya da Terminalde
+    docker ps
+ile aktif container(lari) listelersiniz.
+    docker ps -a
+kodu ile aktif olmayanlari da listelersiniz.
+Dockerfile da oldugu üzere server 8080 portu ile localde calisacaktir.
+    http://localhost:8080
