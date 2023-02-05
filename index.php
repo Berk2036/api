@@ -1,3 +1,3 @@
 <?php
 
-echo "Sorry!Invalid URL";
+echo "Sorry! Invalid URL";
